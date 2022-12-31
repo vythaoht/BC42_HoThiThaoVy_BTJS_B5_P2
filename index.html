@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BTJS B5P2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <form>
+        <h3>BT1: Tính thuế thu nhập cá nhân:</h3>
+        <div class="form-group w-25">
+            <label>Họ và tên</label>
+            <input class="form-control" id="name">
+        </div>
+        <div class="form-group w-25">
+            <label>Tổng thu nhập</label>
+            <input class="form-control" id="income">
+        </div>
+        <div class="form-group w-25">
+            <label>Số người phụ thuộc</label>
+            <input class="form-control" id="dependent">
+        </div>
+        <button id="tax" class="btn btn-success">Thuế phải trả</button>
+        <span id="showTax"></span>
+    </form>
+    <br><br>
+    <div>
+        <h3>BT2: Tính hóa đơn tiền cáp:</h3>
+        <input id="code" placeholder="Mã khách hàng">
+        <select id="type">
+            <option value="">Loại khách hàng</option>
+            <option value="house">Nhà dân</option>
+            <option value="business">Doanh nghiệp</option>
+        </select>
+        <input id="connection" type="number" placeholder="Số kết nối" class="d-none">
+        <input id="premium" type="number" placeholder="Số kênh cao cấp">
+        <br>
+        <button id="payment" class="btn btn-success mt-3">Thanh toán</button>
+        <span id="showPayment"></span>
+
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
